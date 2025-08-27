@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Activation & Reviews USA</title>
+  <meta name="description" content="Step-by-step TV activation guides and honest reviews of top streaming devices and Smart TVs in the USA. Optimized for Google Ads approval.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 50;
+    }
+    .popup-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body class="bg-white text-black font-sans">
+
+  <!-- Header -->
+  <header class="bg-black text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">TV Activation & Reviews</h1>
+    <nav class="space-x-4">
+      <button onclick="openPopup('activationPopup')" class="hover:underline">Activation Guide</button>
+      <a href="#reviews" class="hover:underline">Reviews</a>
+      <button onclick="openPopup('supportPopup')" class="hover:underline">Support</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-10 bg-gray-100">
+    <h2 class="text-3xl font-bold mb-4">Easily Activate & Review Your Devices</h2>
+    <p class="max-w-2xl mx-auto text-gray-700">
+      Get step-by-step activation instructions and honest reviews of the most popular streaming devices and Smart TVs available in the USA.
+    </p>
+    <button onclick="openPopup('activationPopup')" class="mt-6 px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800">Start Activation</button>
+  </section>
+
+  <!-- Activation Guide Popup -->
+  <div id="activationPopup" class="popup">
+    <div class="popup-content">
+      <h3 class="text-xl font-bold mb-3">TV Activation Guide</h3>
+      <ul class="list-disc text-left pl-6 text-gray-700 space-y-2">
+        <li>Power on your Smart TV or streaming device.</li>
+        <li>Connect your device to a stable Wi-Fi network.</li>
+        <li>Go to the device “Settings” and select “Activation / Accounts”.</li>
+        <li>Sign in with your account or create a new one.</li>
+        <li>Enter the activation code displayed on your TV screen.</li>
+        <li>Complete the setup and start streaming.</li>
+      </ul>
+      <button onclick="closePopup('activationPopup')" class="mt-4 bg-black text-white px-4 py-2 rounded">Close</button>
+    </div>
+  </div>
+
+  <!-- Support Popup -->
+  <div id="supportPopup" class="popup">
+    <div class="popup-content">
+      <h3 class="text-xl font-bold mb-3">Support</h3>
+      <p class="text-gray-700">For help, contact us at:</p>
+      <p class="font-semibold mt-2">ourtvstreamsupport@gmail.com</p>
+      <button onclick="closePopup('supportPopup')" class="mt-4 bg-black text-white px-4 py-2 rounded">Close</button>
+    </div>
+  </div>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="bg-gray-50 p-6 max-w-5xl mx-auto rounded-lg shadow mt-10">
+    <h3 class="text-2xl font-bold mb-4 text-center">Top TV & Device Reviews</h3>
+    <div class="space-y-4">
+
+      <div>
+        <a href="https://www.roku.com/" target="_blank" class="text-lg font-semibold text-black hover:underline">Roku Streaming Stick+</a>
+        <p class="text-sm text-gray-600">Affordable, user-friendly, and ideal for cord-cutters. Smooth HD & 4K performance with easy setup.</p>
+      </div>
+
+      <div>
+        <a href="https://www.amazon.com/fire-tv-stick-4k" target="_blank" class="text-lg font-semibold text-black hover:underline">Amazon Fire TV Stick 4K</a>
+        <p class="text-sm text-gray-600">Crisp 4K HDR with Dolby Vision. Alexa makes searching and streaming effortless.</p>
+      </div>
+
+      <div>
+        <a href="https://www.samsung.com/us/tvs/" target="_blank" class="text-lg font-semibold text-black hover:underline">Samsung Smart TV (2025)</a>
+        <p class="text-sm text-gray-600">Premium visuals, advanced apps, and smooth activation. Great for movies and sports lovers.</p>
+      </div>
+
+      <div>
+        <a href="https://electronics.sony.com/tv-video/televisions/bravia" target="_blank" class="text-lg font-semibold text-black hover:underline">Sony Bravia XR</a>
+        <p class="text-sm text-gray-600">Dolby Vision + OLED clarity with Android TV support. High-end option for serious home theaters.</p>
+      </div>
+
+      <div>
+        <a href="https://www.lg.com/us/tvs" target="_blank" class="text-lg font-semibold text-black hover:underline">LG OLED C-Series</a>
+        <p class="text-sm text-gray-600">Infinite contrast with OLED. Dolby Atmos and HDMI 2.1 make it perfect for gamers & cinephiles.</p>
+      </div>
+
+      <div>
+        <a href="https://www.tcl.com/us/en/tvs" target="_blank" class="text-lg font-semibold text-black hover:underline">TCL 6-Series Roku TV</a>
+        <p class="text-sm text-gray-600">Budget-friendly yet powerful. Mini-LED panel with strong brightness and built-in Roku.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center p-4 mt-10">
+    <p>© 2025 TV Activation & Reviews USA. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function openPopup(id) {
+      document.getElementById(id).style.display = "flex";
+    }
+    function closePopup(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
